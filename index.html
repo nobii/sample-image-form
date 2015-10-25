@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=640, initial-scale=0.5" />
+<meta name="description" content="form sample." />
+<title>form</title>
+<link rel="stylesheet" href="css/form.css" />
+</head>
+<body>
+<section id="wrapper">
+
+<form id="form" method="POST" action="hogehoge">
+<h1 id="form__title">アップロードフォームのサンプル</h1>
+<div class="form__section">
+<h2 class="form__header">お名前</h2>
+<div class="form__input">
+<input type="text" name="name" placeholder="山田太郎" />
+<!-- /.form__input --></div>
+<!-- /.form__section --></div>
+<div class="form__section">
+<h2 class="form__header">住所</h2>
+<div class="form__input">
+<input type="text" name="address" placeholder="" />
+<!-- /.form__input --></div>
+<!-- /.form__section --></div>
+<div class="form__section">
+<h2 class="form__header">画像</h2>
+<div class="form__input">
+<input id="image-input" type="file" name="image"/>
+<img id="image-preview" class="form__preview" src="img/noimage.gif" alt="プレビュー" />
+<!-- /.form__input --></div>
+<!-- /.form__section --></div>
+<div class="form__section">
+<div class="form__input">
+<input type="submit" value="送信する"/>
+<!-- /.form__input --></div>
+<!-- /.form__section --></div>
+<!-- /#form --></form>
+<!-- /#wrapper --></section>
+<script src="js/lib/jquery-1.10.2.js"></script>
+<script src="js/lib/jquery-ui-1.10.3.custom.js"></script>
+<script src="js/form.js"></script>
+</body>
+</html>
